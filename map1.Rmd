@@ -1,0 +1,22 @@
+---
+title: "Developping Data Products"
+author: "Brice Baem BAGOA"
+date: "May 18, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+---
+## Let's make a `leaflet` map showing my home town
+
+
+```{r cars}
+library(leaflet)
+
+myHome <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng=-17.463946, lat=14.718997, popup="My Home Town")
+myHome 
+```
